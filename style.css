@@ -353,3 +353,31 @@ footer {
         padding: 17px;
     }
 }
+/* Ensure skill tags display consistently on all devices */
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbb4e9;
+    border-radius: 30px;
+    background-color: #eee5ff;
+    color: #67409c;
+    padding: 9px 22px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .skill-tag {
+        display: inline-flex;
+        border: 1px solid #cbb4e9;
+        border-radius: 30px;
+        padding: 8px 17px;
+    }
+}
